@@ -1,5 +1,5 @@
 > module Fractals where
-> import Array
+> import Data.Array
 
 > type Point = (Float, Float)
 
