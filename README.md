@@ -1,6 +1,14 @@
 # funlangs2026
 Code samples for Functional Programming, Fall 2026
 
+* Week 3
+
+  - `datatypes.lhs`: Some examples of datatype definitions
+    from the lecture.
+
+  - `bst.lhs`: A literate version of the binary search tree
+    example from the lecture.
+
 * Week 2
 
   - `group.lhs`: Some examples demonstrating the use of
