@@ -1,6 +1,18 @@
 # funlangs2026
 Code samples for Functional Programming, Fall 2026
 
+* Week 4
+
+  - `pathological.lhs`: An example illustrating pathological
+    behavior of Haskell-style type inference.
+
+  - `subtleties.lhs`: Some examples illustrating some subtle
+    details of Haskell-style type inference.
+
+  - `Treedot.lhs`: A library for generating GraphViz/dot files
+    for tree-like data structures using a simple variant of the
+    approach that was presented in lectures.
+
 * Week 3
 
   - `datatypes.lhs`: Some examples of datatype definitions
