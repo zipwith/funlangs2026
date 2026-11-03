@@ -61,7 +61,7 @@ of the toDot function:
 > graph      :: [DotStmt] -> String
 > graph stmts = "digraph tree {\n" ++ semi (map toText stmts) ++ "}\n"
 >  where semi = foldr (\l ls -> l ++ ";\n" ++ ls) ""
->        toText (Node p l)  = showPath p ++ " [label=\"" ++ l ++ "\"]"
+>        toText (Node p l)  = showPath p ++ " [label=" ++ show l ++ "]"
 >        toText (Edge p p') = showPath p ++ " -> " ++ showPath p'
 
 > toDot         :: LabeledTree t => t -> String

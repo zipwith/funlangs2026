@@ -1,6 +1,28 @@
 # funlangs2026
 Code samples for Functional Programming, Fall 2026
 
+* Week 6
+
+  - `IOActions-README.txt`: Some details explaining how to
+    us the IOActions examples.
+
+  - `IOActions.lhs`: A repackaging of some standard Haskell
+    functions to be used "IO Actions".
+
+  - `IOExercises.lhs`: A template for some exercises using
+    IO Actions.
+
+  - `WebActions.lhs`: A library of IO actions for downloading
+    files and processing web pages.  (See `IOActions-README.txt`
+    for further details about these files, including information
+    on how to install the necessary packages to use
+    `WebActions.lhs`.)
+
+* Week 5
+
+  - `Expr.lhs`: An example showing how to use the Treedot
+    library with a simple data type of expressions.
+
 * Week 4
 
   - `pathological.lhs`: An example illustrating pathological
