@@ -3,6 +3,28 @@ Code samples for Functional Programming, Fall 2026
 
 * Week 6
 
+  - `game`: a folder containing various versions of the
+    guess-a-number game that we developed interactively
+    in class.  This includes the final version of the
+    game (in `guess.lhs`) as well as an attempt to
+    reconstruct some of the intermediate steps (also
+    adding in some documentation in the process):
+
+    - `guess0.lhs`: A simple function that compares a guess
+       with a secret value.
+    - `guess1.lhs`: Adding a function to ask the player to
+      enter a guess.
+    - `guess2.lhs`: Adding code to generate a secret number.
+    - `guess3.lhs`: Adding a loop if the player's guess is
+       incorrect.
+    - `guess4.lhs`: Adding a counter to limit the number of
+      guesses that players are allowed to make.
+    - `guess5.lhs`: Refactoring to store all game state in a
+      single data value.
+    - `guess6.lhs`: Adding a "cheat" code for certain players :-)
+    - `guess7.lhs`: Adding some type signatures to provide
+      program documentation.
+
   - `IOActions-README.txt`: Some details explaining how to
     us the IOActions examples.
 
