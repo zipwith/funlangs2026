@@ -1,0 +1,21 @@
+#!runhugs
+
+import Data.List(inits, tails, isPrefixOf)
+
+main           = getContents >>= (putStr . align)
+
+separators     = [ "=", "::" ]
+
+align         :: String -> String
+align s        = unlines (map snd ps)
+                 where w  = foldr max 0 (map fst ps)
+                       ps = map (patchLine w) (lines s)
+
+pad           :: Int -> String -> String
+pad n s        = take n (s ++ repeat ' ')
+
+patchLine     :: Int -> String -> (Int, String)
+patchLine n cs = head (matches ++ [(0, cs)])
+ where matches = [ let l = length s in (l + length as, pad (n-l) as ++ bs)
+                 | (as, bs) <- zip (inits cs) (tails cs),
+                   s <- separators, s `isPrefixOf` bs ]

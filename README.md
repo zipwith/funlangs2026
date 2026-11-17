@@ -1,6 +1,34 @@
 # funlangs2026
 Code samples for Functional Programming, Fall 2026
 
+* Week 8
+
+  - `Set.lhs`: An implementation of sets as characteristic
+    functions.
+
+  - `Church.lhs`: An implementation of Church numerals.
+
+  - `artwork/*`: A library for constructing images as function
+    values.
+
+  - `ParserCombs.lhs`: A library of "parser combinators", using
+    function values to represent and implement a broad range of
+    parsing mechanisms.  The code in this file is intended for
+    use with Hugs.
+
+  - `ParserCombsGHC.lhs`: A version of the `ParserCombs.lhs`
+    library that is suitable for use with GHC/GHCi.  (The only
+    real difference is that the GHC version includes the required
+    instance for the `Applicative` class.)
+
+* Week 7
+
+  - `htidy`: A shell script for vertically aligning separators
+     in Haskell programs (this version intended for use with Hugs).
+
+  - `gtidy`: A shell script for vertically aligning separators
+     in Haskell programs (this version intended for use with ghc).
+
 * Week 6
 
   - `game`: a folder containing various versions of the
